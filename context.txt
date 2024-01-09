@@ -1,0 +1,39 @@
+Contexte :
+Vous êtes chargé de créer un système de gestion de bibliothèque pour une bibliothèque municipale. La bibliothèque souhaite moderniser son système actuel en adoptant une approche basée sur une base de données NoSQL, en particulier MongoDB.
+
+Objectifs :
+
+Modélisation des Données :
+
+Concevez un modèle de données adapté à la gestion des livres, des auteurs, des emprunteurs, et des transactions d'emprunt/retour.
+Livres :
+Titre
+Auteur (référence à un document Auteur)
+Catégorie
+ISBN
+Disponibilité
+Date de publication
+Auteurs :
+Nom
+Biographie
+Date de naissance
+Liste des œuvres (références à des documents Livre)
+Emprunteurs :
+Nom
+Adresse
+Numéro de téléphone
+Liste des livres empruntés (références à des documents Livre)
+
+Dans le modèle de données, les relations entre les entités sont gérées par des références. Un livre référence un auteur et un emprunteur, et un auteur référence une liste d'œuvres. Cela permet de récupérer facilement des informations connexes.
+
+Veuillez revoir la notion de relation entre les documents  ( 1-1, 1-N, N-N) en MongoDB. 
+
+Utilisez le modèle de données orienté document de MongoDB pour représenter ces entités.
+
+Fonctionnalités de Base :
+
+Implémentez des fonctionnalités de base telles que l'ajout de livres, la gestion des emprunts, le retour de livres, etc.
+Gestion des Emprunts et Retours :
+Mettez en place la gestion des emprunts et des retours de livres. Vérifiez la disponibilité des livres avant d'autoriser un emprunt.
+Ajout de Livres :
+Implémentez une fonctionnalité pour ajouter de nouveaux livres à la bibliothèque. Assurez-vous que toutes les informations nécessaires sont saisies.
